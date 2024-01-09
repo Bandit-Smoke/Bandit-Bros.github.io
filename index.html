@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Your Company - Portfolio</title>
+    <style>
+        /* Reset some default styles */
+        body, h1, h2, p {
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            font-family: 'Arial', sans-serif;
+            background-color: #f4f4f4;
+            color: #333;
+            line-height: 1.6;
+        }
+
+        /* Header styles */
+        header {
+            background-color: #333;
+            color: #fff;
+            padding: 20px;
+            text-align: center;
+        }
+
+        /* Navigation styles */
+        nav {
+            background-color: #444;
+            padding: 10px;
+            text-align: center;
+        }
+
+        nav a {
+            color: #fff;
+            text-decoration: none;
+            padding: 10px;
+            margin: 0 10px;
+            font-weight: bold;
+            transition: color 0.3s ease-in-out;
+        }
+
+        nav a:hover {
+            color: #ff7e5f;
+        }
+
+        /* Hero section styles */
+        .hero {
+            text-align: center;
+            padding: 50px 20px;
+        }
+
+        .hero h1 {
+            font-size: 3em;
+            margin-bottom: 20px;
+            color: #333;
+        }
+
+        .hero p {
+            font-size: 1.2em;
+            color: #555;
+        }
+
+        /* Portfolio section styles */
+        .portfolio {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-around;
+            padding: 50px 20px;
+        }
+
+        .portfolio-item {
+            width: calc(33.333% - 20px);
+            margin: 20px 0;
+            box-sizing: border-box;
+            overflow: hidden;
+            position: relative;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+
+        .portfolio-item img {
+            width: 100%;
+            height: auto;
+            border-radius: 10px 10px 0 0;
+        }
+
+        .portfolio-item .overlay {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: rgba(0, 0, 0, 0.7);
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            opacity: 0;
+            transition: opacity 0.3s ease-in-out;
+        }
+
+        .portfolio-item:hover .overlay {
+            opacity: 1;
+        }
+
+        .portfolio-item h3 {
+            color: #fff;
+            font-size: 1.5em;
+            margin-bottom: 10px;
+        }
+
+        .portfolio-item p {
+            color: #ddd;
+            font-size: 1em;
+        }
+
+        /* Contact section styles */
+        .contact {
+            text-align: center;
+            padding: 50px 20px;
+        }
+
+        .contact h2 {
+            font-size: 2.5em;
+            margin-bottom: 20px;
+            color: #333;
+        }
+
+        .contact p {
+            font-size: 1.2em;
+            color: #555;
+        }
+
+        .contact form {
+            margin-top: 20px;
+        }
+
+        .contact form input,
+        .contact form textarea,
+        .contact form button {
+            margin-bottom: 15px;
+            width: 100%;
+            padding: 10px;
+            box-sizing: border-box;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+        }
+
+        .contact form button {
+            background-color: #333;
+            color: #fff;
+            cursor: pointer;
+        }
+
+        .contact form button:hover {
+            background-color: #ff7e5f;
+        }
+
+        /* Footer styles */
+        footer {
+            background-color: #333;
+            color: #fff;
+            text-align: center;
+            padding: 20px;
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+        }
+    </style>
+</head>
+
+<body>
+    <!-- Header -->
+    <header>
+        <h1>Your Company</h1>
+        <p>Building Dreams, Delivering Excellence</p>
+    </header>
+
+    <!-- Navigation -->
+    <nav>
+        <a href="#hero">Home</a>
+        <a href="#portfolio">Portfolio</a>
+        <a href="#contact">Contact</a>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="hero" class="hero">
+        <h1>Welcome to Your Company</h1>
+        <p>Explore our innovative solutions and creative projects.</p>
+    </section>
+
+    <!-- Portfolio Section -->
+    <section id="portfolio" class="portfolio">
+        <!-- Portfolio Item 1 -->
+        <div class="portfolio-item">
+            <img src="project1.jpg" alt="Project 1">
+            <div class="overlay">
+                <h3>Project 1</h3>
+                <p>Description of Project 1.</p>
+            </div>
+        </div>
+
+        <!-- Portfolio Item 2 -->
+        <div class="portfolio-item">
+            <img src="project2.jpg" alt="Project 2">
+            <div class="overlay">
+                <h3>Project 2</h3>
+                <p>Description of Project 2.</p>
+            </div>
+        </div>
+
+        <!-- Portfolio Item 3 -->
+        <div class="portfolio-item">
+            <img src="project3.jpg" alt="Project 3">
+            <div class="overlay">
+                <h3>Project 3</h3>
+                <p>Description of Project 3.</p>
+            </div>
+        </div>
+        <!-- Add more portfolio items as needed -->
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact">
+        <h2>Contact Us</h2>
+        <p>Have a project in mind? Let's discuss how we can help you!</p>
+        <form>
+            <input type="text" placeholder="Your Name">
+            <input type="email" placeholder="Your Email">
+            <textarea placeholder="Your Message"></textarea>
+            <button type="submit">Send Message</button>
+        </form>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        &copy; 2024 Your Company. All rights reserved.
+    </footer>
+</body>
+
+</html>
